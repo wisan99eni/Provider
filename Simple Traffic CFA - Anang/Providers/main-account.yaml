@@ -31,6 +31,86 @@ proxies:
     headers:
       Host: sg.wisan6.my.id
   udp: true
+- name: Flex BUG1
+  server: "sogood.linefriends.com"
+  port: 80
+  type: vmess
+  uuid: 2c3343ad-2fb3-42ae-9b0e-5f49aa709fe5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.wisan6.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.wisan6.my.id
+  udp: true
+- name: Flex BUG2
+  server: "static.line-scdn.net"
+  port: 80
+  type: vmess
+  uuid: 2c3343ad-2fb3-42ae-9b0e-5f49aa709fe5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.wisan6.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.wisan6.my.id
+  udp: true
+- name: Flex BUG3
+  server: "ava.game.naver.com"
+  port: 80
+  type: vmess
+  uuid: 2c3343ad-2fb3-42ae-9b0e-5f49aa709fe5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.wisan6.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.wisan6.my.id
+  udp: true
+- name: Flex BUG4
+  server: "104.21.71.112"
+  port: 80
+  type: vmess
+  uuid: 2c3343ad-2fb3-42ae-9b0e-5f49aa709fe5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.wisan6.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.wisan6.my.id
+  udp: true
+- name: Flex BUG5
+  server: "172.67.144.126"
+  port: 80
+  type: vmess
+  uuid: 2c3343ad-2fb3-42ae-9b0e-5f49aa709fe5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.wisan6.my.id
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.wisan6.my.id
+  udp: true
 - name: ByU
   server: "162.159.128.79"
   port: 443

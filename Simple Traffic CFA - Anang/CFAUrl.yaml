@@ -240,7 +240,7 @@ rule-providers:
   Id.only:
     type: file
     behavior: domain
-    url: "https://github.com/wisan99eni/Provider/blob/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/idonly.yaml"
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/idonly.yaml"
     path: "./idonly.yaml"
     interval: 99
   key-id:

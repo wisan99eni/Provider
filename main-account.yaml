@@ -35,7 +35,7 @@ proxies:
   server: "162.159.128.79"
   port: 443
   type: vmess
-  uuid: ega
+  uuid: 529afd11-07f8-40b8-9019-caa8bffbba65
   alterId: 0
   cipher: auto
   tls: true

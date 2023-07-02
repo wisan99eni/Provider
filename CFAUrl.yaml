@@ -275,9 +275,9 @@ rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DST-PORT,5228,CLASH
 # Script
-#- SCRIPT,QUIC,REJECT
-#- SCRIPT,VCWA,Video Call
-#- SCRIPT,udpyoutube,REJECT
+- SCRIPT,QUIC,REJECT
+- SCRIPT,VCWA,Video Call
+- SCRIPT,udpyoutube,REJECT
 # Bypass Adblock
 - DOMAIN-SUFFIX,googlesyndication.com,CLASH
 - DOMAIN-SUFFIX,pagead2.googlesyndication.com,CLASH

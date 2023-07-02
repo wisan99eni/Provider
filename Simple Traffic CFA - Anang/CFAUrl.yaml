@@ -240,19 +240,19 @@ rule-providers:
   Id.only:
     type: file
     behavior: domain
-    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/idonly.yaml"
+    url: "https://github.com/wisan99eni/Provider/blob/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/idonly.yaml"
     path: "./idonly.yaml"
     interval: 99
   key-id:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/key-id.yaml"
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/key-id.yaml"
     path: "./key-id.yaml"
     interval: 99
 proxy-providers:
   main:
     type: file
-    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/main-account.yaml"
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/main-account.yaml"
     path: "./main-account.yaml"
     health-check:
       enable: true
@@ -260,7 +260,7 @@ proxy-providers:
       interval: 99
   indo:
     type: file
-    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/indo-account.yaml"
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/Simple%20Traffic%20CFA%20-%20Anang/Providers/indo-account.yaml"
     path: "./indo-account.yaml"
     health-check:
       enable: true

@@ -1,0 +1,331 @@
+dns:
+  #nameserver:
+  #- https://dns.quad9.net/dns-query
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  fake-ip-range: 198.18.0.1/16
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.24.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.netflix.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+  fake-ip-filter:
+  - "+.pool.ntp.org"
+  - ntp7.*.com
+  - ntp6.*.com
+  - ntp5.*.com
+  - ntp4.*.com
+  - ntp3.*.com
+  - ntp2.*.com
+  - ntp1.*.com
+  - ntp.*.com
+  - time7.*.com
+  - time6.*.com
+  - time5.*.com
+  - time4.*.com
+  - time3.*.com
+  - time2.*.com
+  - time1.*.com
+  - time.*.apple.com
+  - time.*.edu.cn
+  - time.*.gov
+  - time.*.com
+  - "*.home.arpa"
+  - "*.local"
+  - "*.test"
+  - "*.localhost"
+  - "*.invalid"
+  - "*.example"
+  - "*.localdomain"
+  - time1.cloud.tencent.com
+  - "*.ntp.org"
+  - "*.time.edu"
+  - "*.lan"
+  - "*.ntp.org.cn"
+  - "*.time.edu.cn"
+  - "+.*"
+  - time-ios.apple.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - shark007.net
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  #default-nameserver:
+  #- 1.1.1.1
+  #- 1.0.0.1
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: info
+allow-lan: true
+external-controller: 127.0.0.1:9090
+secret: fbrn02
+bind-address: "*"
+experimental:
+  ignore-resolve-fail: true
+unified-delay: true
+ipv6: true
+tun:
+  enable: true
+  stack: system
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+profile:
+  store-selected: true
+  store-fakeip: true
+  store-fake-ip: true
+proxies:
+proxy-groups:
+- name: CLASH
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - Manual
+  - Load Balance
+- name: Manual
+  type: select
+  disable-udp: false
+  proxies:
+  - indo traffic
+  - umum
+- name: Load Balance
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - main
+  url: https://cp.cloudflare.com/generate_204
+  interval: '99'
+- name: indo traffic
+  type: select
+  disable-udp: false
+  use:
+  - indo
+- name: umum
+  type: select
+  disable-udp: false
+  use:
+  - main
+- name: E-Banking
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - indo traffic
+  - umum  
+- name: PlayStore
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - indo traffic
+  - umum  
+- name: Video Call
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - indo traffic
+  - umum  
+- name: Youtube
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - Load Balance
+  - Manual
+rule-providers:
+  Id.only:
+    type: file
+    behavior: domain
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/idonly.yaml"
+    path: "./idonly.yaml"
+    interval: 99
+  key-id:
+    type: file
+    behavior: classical
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/key-id.yaml"
+    path: "./key-id.yaml"
+    interval: 99
+proxy-providers:
+  main:
+    type: file
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/main-account.yaml"
+    path: "./main-account.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 99
+  indo:
+    type: file
+    url: "https://raw.githubusercontent.com/wisan99eni/Provider/main/indo-account.yaml"
+    path: "./indo-account.yaml"
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 99
+script:
+  shortcuts:
+    QUIC: network == 'udp' and dst_port == 443 and (geoip(resolve_ip(host)) != 'ID' or geoip(dst_ip) != 'ID')
+    VCWA: network == 'udp' and dst_port == 3478
+    udpyoutube: network == 'udp' and ('youtube' in host or 'googlevideo' in host)
+rules:
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- DST-PORT,5228,CLASH
+# Script
+#- SCRIPT,QUIC,REJECT
+#- SCRIPT,VCWA,Video Call
+#- SCRIPT,udpyoutube,REJECT
+# Bypass Adblock
+- DOMAIN-SUFFIX,googlesyndication.com,CLASH
+- DOMAIN-SUFFIX,pagead2.googlesyndication.com,CLASH
+# Live.On
+- DOMAIN-KEYWORD,liveon.id,indo traffic
+# Banking
+- PROCESS-NAME,id.co.bri.brimo,E-Banking
+- PROCESS-NAME,com.btn,E-Banking
+- PROCESS-NAME,id.co.bankbkemobile.digitalbank,E-Banking
+- DOMAIN-KEYWORD,bi.go.id,E-Banking
+- DOMAIN-KEYWORD,dana,E-Banking
+- DOMAIN-KEYWORD,ovo,E-Banking
+- DOMAIN-KEYWORD,linkaja,E-Banking
+- DOMAIN-KEYWORD,dbs,E-Banking
+- DOMAIN-KEYWORD,bri,E-Banking
+- DOMAIN-KEYWORD,bni,E-Banking
+- DOMAIN-KEYWORD,btn,E-Banking
+- DOMAIN-KEYWORD,seabank,E-Banking
+- DOMAIN-KEYWORD,gopay,E-Banking
+- DOMAIN-KEYWORD,indomaretpointku,E-Banking
+- DOMAIN-KEYWORD,alfagift,E-Banking
+- DOMAIN-KEYWORD,pegadaian,E-Banking
+- DOMAIN-KEYWORD,lakuemas,E-Banking
+- DOMAIN-KEYWORD,bca,E-Banking
+- DOMAIN-KEYWORD,mandiri,E-Banking
+- DOMAIN-KEYWORD,cimbniaga,E-Banking
+- DOMAIN-KEYWORD,bank,E-Banking
+- DOMAIN-KEYWORD,jenius,E-Banking
+- DOMAIN-KEYWORD,tmwrbyuob,E-Banking
+- DOMAIN-KEYWORD,paypal,E-Banking
+- DOMAIN-KEYWORD,i-saku,E-Banking
+- DOMAIN-KEYWORD,bareksa,E-Banking
+- DOMAIN-KEYWORD,jago.com,E-Banking
+# Playstore
+- DOMAIN-KEYWORD,googleapis,PlayStore
+- DOMAIN-KEYWORD,play.google,PlayStore
+- DOMAIN-KEYWORD,gvt1,PlayStore
+# Youtube
+- PROCESS-NAME,com.google.android.youtube,Youtube
+- PROCESS-NAME,com.google.android.youtube.app.honeycomb.Shell$HomeActivity,Youtube
+- DOMAIN-KEYWORD,youtube,Youtube
+- DOMAIN-KEYWORD,ytimg,Youtube
+- DOMAIN-KEYWORD,yt,Youtube
+- DOMAIN-KEYWORD,googlevideo,Youtube
+- DOMAIN-KEYWORD,video.google,Youtube
+# RuleSet
+- RULE-SET,Id.only,indo traffic
+- RULE-SET,key-id,indo traffic
+# GEO
+- GEOIP,ID,indo traffic
+- MATCH,CLASH

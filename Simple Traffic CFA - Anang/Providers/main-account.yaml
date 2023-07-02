@@ -1,9 +1,9 @@
 proxies:
-- name: VM BUG172
+- name: LiveON BUG172
   type: vmess
   server: 172.67.139.111
   port: 443
-  uuid: 529afd11-07f8-40b8-9019-caa8bffbba65
+  uuid: 6799fd67-804b-4a07-95d5-2467a91f5c9e
   alterId: 0
   cipher: auto
   udp: true
@@ -15,11 +15,11 @@ proxies:
     path: /vmess
     headers:
       Host: sg.wisan6.my.id
-- name: VM BUG104
+- name: LiveON BUG104
   server: "104.21.8.121"
   port: 443
   type: vmess
-  uuid: 529afd11-07f8-40b8-9019-caa8bffbba65
+  uuid: 6799fd67-804b-4a07-95d5-2467a91f5c9e
   alterId: 0
   cipher: auto
   tls: true
@@ -31,11 +31,11 @@ proxies:
     headers:
       Host: sg.wisan6.my.id
   udp: true
-- name: space
+- name: ByU
   server: "162.159.128.79"
   port: 443
   type: vmess
-  uuid: 529afd11-07f8-40b8-9019-caa8bffbba65
+  uuid: 6799fd67-804b-4a07-95d5-2467a91f5c9e
   alterId: 0
   cipher: auto
   tls: true

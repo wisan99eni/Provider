@@ -1,41 +1,41 @@
 proxies:
-- name: IDVM BUG172
+- name: IDLiveON BUG172
   type: vmess
   server: 172.67.139.111
   port: 443
-  uuid: 71bdbe68-2c0b-4206-b4a1-63448c854607
+  uuid: 6799fd67-804b-4a07-95d5-2467a91f5c9e
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: id-nusa1.estebuh.my.id
+  servername: sg.wisan6.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
       Host: id-nusa1.estebuh.my.id
-- name: IDVM BUG104
+- name: IDLiveON BUG104
   server: "104.21.8.121"
   port: 443
   type: vmess
-  uuid: 71bdbe68-2c0b-4206-b4a1-63448c854607
+  uuid: 6799fd67-804b-4a07-95d5-2467a91f5c9e
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id-nusa1.estebuh.my.id
+  servername: sg.wisan6.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: id-nusa1.estebuh.my.id
+      Host: sg.wisan6.my.id
   udp: true
-- name: space
+- name: ByU
   server: "162.159.128.79"
   port: 443
   type: vmess
-  uuid: "529afd11-07f8-40b8-9019-caa8bffbba65"
+  uuid: "6799fd67-804b-4a07-95d5-2467a91f5c9e"
   alterId: 0
   cipher: auto
   tls: true

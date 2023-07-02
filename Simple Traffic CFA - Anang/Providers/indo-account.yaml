@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /vmess
     headers:
-      Host: id-nusa1.estebuh.my.id
+      Host: sg.wisan6.my.id
 - name: IDLiveON BUG104
   server: "104.21.8.121"
   port: 443

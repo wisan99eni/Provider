@@ -2,7 +2,7 @@ proxies:
 - name: LingShopeeSNI
   type: vmess
   server: net6.lingvpn.my.id
-  port: 443
+  port: 80
   uuid: 444d20db-affa-4683-b8db-f9a272062c36
   alterId: 0
   cipher: auto

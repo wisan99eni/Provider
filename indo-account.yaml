@@ -7,7 +7,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
   servername: shopee.co.id
   network: ws

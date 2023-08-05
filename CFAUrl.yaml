@@ -1,6 +1,6 @@
 dns:
-  #nameserver:
-  #- https://dns.quad9.net/dns-query
+  nameserver:
+  - https://dns.cloudflare.com/dns-query
   enable: true
   ipv6: true
   enhanced-mode: fake-ip

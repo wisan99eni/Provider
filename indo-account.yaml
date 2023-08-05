@@ -1,49 +1,49 @@
 proxies:
-- name: IDVM BUG172
+- name: LingShopeeSNI
   type: vmess
-  server: 172.67.139.111
+  server: net6.lingvpn.my.id
   port: 443
-  uuid: 71bdbe68-2c0b-4206-b4a1-63448c854607
+  uuid: 444d20db-affa-4683-b8db-f9a272062c36
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: id-nusa1.estebuh.my.id
+  servername: shopee.co.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: id-nusa1.estebuh.my.id
-- name: IDVM BUG104
-  server: "104.21.8.121"
-  port: 443
+      Host: shopee.co.id
+- name: LingCDN
+  server: 104.21.8.121
+  port: 80
   type: vmess
-  uuid: 71bdbe68-2c0b-4206-b4a1-63448c854607
+  uuid: 444d20db-affa-4683-b8db-f9a272062c36
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: id-nusa1.estebuh.my.id
+  servername: net6.lingvpn.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: id-nusa1.estebuh.my.id
+      Host: net6.lingvpn.my.id
   udp: true
 - name: space
   server: "162.159.128.79"
   port: 443
   type: vmess
-  uuid: "529afd11-07f8-40b8-9019-caa8bffbba65"
+  uuid: "444d20db-affa-4683-b8db-f9a272062c36"
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: sg.wisan6.my.id
+  servername: net6.lingvpn.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: sg.wisan6.my.id
+      Host: net6.lingvpn.my.id
   udp: true

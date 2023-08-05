@@ -146,9 +146,9 @@ dns:
   - Mijia Cloud
   - "+.cmbchina.com"
   - "+.cmbimg.com"
-  #default-nameserver:
-  #- 1.1.1.1
-  #- 1.0.0.1
+  default-nameserver:
+  - 1.1.1.1
+  - 1.0.0.1
 redir-port: 7892
 tproxy-port: 7895
 port: 7890

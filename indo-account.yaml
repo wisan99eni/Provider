@@ -1,13 +1,13 @@
 proxies:
-- name: LingShopeeSNI
+- name: Ling-SNI-ntls
   type: vmess
-  server: net6.lingvpn.my.id
-  port: 443
-  uuid: 444d20db-affa-4683-b8db-f9a272062c36
+  server: 103.149.177.189
+  port: 80
+  uuid: 5953de90-f6fe-4175-8816-40c79b9c51a7
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
   servername: shopee.co.id
   network: ws
@@ -15,35 +15,58 @@ proxies:
     path: /vmess
     headers:
       Host: shopee.co.id
-- name: LingCDN
+- name: Ling-CDN-ntls
   server: 104.21.8.121
   port: 80
   type: vmess
-  uuid: 444d20db-affa-4683-b8db-f9a272062c36
+  uuid: 5953de90-f6fe-4175-8816-40c79b9c51a7
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  servername: net6.lingvpn.my.id
+  servername: lula.icangvpn.my.id
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: net6.lingvpn.my.id
+      Host: lula.icangvpn.my.id
   udp: true
-- name: space
-  server: "162.159.128.79"
+- name: Atharva-SNI-tcp
+  server: atharva-3.vpspatungan.my.id
   port: 443
-  type: vmess
-  uuid: "444d20db-affa-4683-b8db-f9a272062c36"
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: net6.lingvpn.my.id
+  type: trojan
+  password: 6c8867bf-c9e2-485c-b03d-59403b21619b
   network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: net6.lingvpn.my.id
+  sni: shopee.co.id
+  skip-cert-verify: true
   udp: true
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: shopee.co.id
+- name: Atharva-CDN-tcp
+  server: 104.21.8.121
+  port: 443
+  type: trojan
+  password: 6c8867bf-c9e2-485c-b03d-59403b21619b
+  network: ws
+  sni: atharva-3.vpspatungan.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: atharva-3.vpspatungan.my.id
+- name: space
+  server: 162.159.128.79
+  port: 443
+  type: trojan
+  password: 6c8867bf-c9e2-485c-b03d-59403b21619b
+  network: ws
+  sni: atharva-3.vpspatungan.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: atharva-3.vpspatungan.my.id
